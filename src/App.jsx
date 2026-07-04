@@ -18,6 +18,16 @@ export default function App() {
   const formRef = useRef()
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitMessage, setSubmitMessage] = useState('')
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768)
+    }
+    handleResize()
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -73,8 +83,10 @@ export default function App() {
                {/* Kinetic Text removed for clarity, moved to HTML UI */}
             </group>
             
-            {/* Map pages to scenes */}
-            <SceneManager activeSection={activeSection} />
+            {/* Map pages to scenes with responsive scaling */}
+            <group scale={isMobile ? 0.5 : 1} position={isMobile ? [0, 1, 0] : [0, 0, 0]}>
+              <SceneManager activeSection={activeSection} />
+            </group>
           </Suspense>
 
           {/* Post Processing for the Sci-Fi Look */}
