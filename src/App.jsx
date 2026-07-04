@@ -117,7 +117,7 @@ export default function App() {
               Building highly efficient software solutions, dynamic web experiences, and intelligent deep learning architectures.
             </p>
             <div className="flex flex-col md:flex-row flex-wrap gap-4 md:gap-5 w-full md:w-auto">
-              <a href="/Vinay_Ketha_Resume.pdf" download="Vinay_Ketha_Resume.pdf" className="group flex justify-center items-center gap-3 bg-gradient-to-r from-primary to-primary/80 text-black font-bold px-8 py-4 md:py-3 rounded-xl md:rounded-none hover:shadow-[0_0_30px_rgba(0,255,204,0.6)] transition-all duration-300 w-full md:w-auto">
+              <a href="/Ketha_vinay_resume.1.pdf" download="Vinay_Ketha_Resume.pdf" className="group flex justify-center items-center gap-3 bg-gradient-to-r from-primary to-primary/80 text-black font-bold px-8 py-4 md:py-3 rounded-xl md:rounded-none hover:shadow-[0_0_30px_rgba(0,255,204,0.6)] transition-all duration-300 w-full md:w-auto">
                 <Download size={18} className="group-hover:-translate-y-1 transition-transform" /> RESUME_DL
               </a>
               <a href="https://www.linkedin.com/in/vinay-ketha-451643397" target="_blank" rel="noopener noreferrer" className="group flex justify-center items-center gap-3 bg-black/40 border border-secondary text-secondary font-bold px-8 py-4 md:py-3 rounded-xl md:rounded-none hover:bg-secondary hover:text-white hover:shadow-[0_0_30px_rgba(191,0,255,0.6)] transition-all duration-300 backdrop-blur-sm w-full md:w-auto">
