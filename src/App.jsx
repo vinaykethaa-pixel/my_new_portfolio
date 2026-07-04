@@ -7,7 +7,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { Download, GraduationCap, Code2, Cpu, Link as LinkIcon, Mail, Phone, Terminal, Globe, Database, Network, CarFront, ShieldAlert, Activity, Send } from 'lucide-react'
 import emailjs from '@emailjs/browser'
 
-import KineticText from './components/KineticText'
 import SceneManager from './components/SceneManager'
 import HTMLCursor from './components/HTMLCursor'
 
