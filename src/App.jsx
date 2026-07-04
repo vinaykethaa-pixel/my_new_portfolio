@@ -99,31 +99,31 @@ export default function App() {
         </nav>
 
         {/* PAGE 1: Hero Section */}
-        <section className="scroll-section min-h-screen w-full flex flex-col justify-center p-12 pointer-events-auto relative z-10">
-          <div className="max-w-3xl ml-12 lg:ml-24">
-            <h2 className="text-secondary font-mono text-sm tracking-[0.4em] mb-4 flex items-center gap-3 opacity-80">
+        <section className="scroll-section min-h-screen w-full flex flex-col justify-center p-6 md:p-12 pointer-events-auto relative z-10">
+          <div className="max-w-3xl mx-auto md:ml-12 lg:ml-24 mt-20 md:mt-0 text-center md:text-left flex flex-col items-center md:items-start">
+            <h2 className="text-secondary font-mono text-xs md:text-sm tracking-[0.4em] mb-4 flex items-center gap-3 opacity-80">
               <Cpu size={16} className="animate-pulse" /> INTIALIZING_SEQUENCE
             </h2>
             
-            <h1 className="text-7xl md:text-9xl font-black mb-2 uppercase tracking-tighter leading-none drop-shadow-[0_0_25px_rgba(0,255,204,0.6)]">
+            <h1 className="text-5xl md:text-7xl lg:text-9xl font-black mb-2 uppercase tracking-tighter leading-none drop-shadow-[0_0_25px_rgba(0,255,204,0.6)]">
               <span className="text-white">VINAY </span>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">KETHA</span>
             </h1>
             
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 uppercase tracking-tight leading-tight text-gray-300">
+            <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 uppercase tracking-tight leading-tight text-gray-300">
               Software & Machine Learning Developer
             </h2>
-            <p className="text-gray-400 max-w-lg mb-10 text-lg leading-relaxed font-light">
+            <p className="text-gray-400 max-w-lg mb-10 text-base md:text-lg leading-relaxed font-light">
               Building highly efficient software solutions, dynamic web experiences, and intelligent deep learning architectures.
             </p>
-            <div className="flex flex-wrap gap-5">
-              <a href="/Vinay_Ketha_Resume.pdf" download="Vinay_Ketha_Resume.pdf" className="group flex items-center gap-3 bg-gradient-to-r from-primary to-primary/80 text-black font-bold px-8 py-3 rounded-none hover:shadow-[0_0_30px_rgba(0,255,204,0.6)] transition-all duration-300">
+            <div className="flex flex-col md:flex-row flex-wrap gap-4 md:gap-5 w-full md:w-auto">
+              <a href="/Vinay_Ketha_Resume.pdf" download="Vinay_Ketha_Resume.pdf" className="group flex justify-center items-center gap-3 bg-gradient-to-r from-primary to-primary/80 text-black font-bold px-8 py-4 md:py-3 rounded-xl md:rounded-none hover:shadow-[0_0_30px_rgba(0,255,204,0.6)] transition-all duration-300 w-full md:w-auto">
                 <Download size={18} className="group-hover:-translate-y-1 transition-transform" /> RESUME_DL
               </a>
-              <a href="https://www.linkedin.com/in/vinay-ketha-451643397" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-3 bg-black/40 border border-secondary text-secondary font-bold px-8 py-3 hover:bg-secondary hover:text-white hover:shadow-[0_0_30px_rgba(191,0,255,0.6)] transition-all duration-300 backdrop-blur-sm">
+              <a href="https://www.linkedin.com/in/vinay-ketha-451643397" target="_blank" rel="noopener noreferrer" className="group flex justify-center items-center gap-3 bg-black/40 border border-secondary text-secondary font-bold px-8 py-4 md:py-3 rounded-xl md:rounded-none hover:bg-secondary hover:text-white hover:shadow-[0_0_30px_rgba(191,0,255,0.6)] transition-all duration-300 backdrop-blur-sm w-full md:w-auto">
                 <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" className="group-hover:rotate-12 transition-transform"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg> LINKEDIN
               </a>
-              <a href="https://github.com/vinaykethaa-pixel" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-3 bg-black/40 border border-white/50 text-white font-bold px-8 py-3 hover:bg-white hover:text-black hover:shadow-[0_0_30px_rgba(255,255,255,0.6)] transition-all duration-300 backdrop-blur-sm">
+              <a href="https://github.com/vinaykethaa-pixel" target="_blank" rel="noopener noreferrer" className="group flex justify-center items-center gap-3 bg-black/40 border border-white/50 text-white font-bold px-8 py-4 md:py-3 rounded-xl md:rounded-none hover:bg-white hover:text-black hover:shadow-[0_0_30px_rgba(255,255,255,0.6)] transition-all duration-300 backdrop-blur-sm w-full md:w-auto">
                 <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" className="group-hover:scale-110 transition-transform"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg> GITHUB
               </a>
             </div>
@@ -131,28 +131,28 @@ export default function App() {
         </section>
 
         {/* PAGE 2: Education Section */}
-        <section className="scroll-section min-h-screen w-full flex flex-col justify-center items-end p-12 pointer-events-auto relative z-10">
-          <div className="max-w-4xl mr-4 lg:mr-16 text-right">
-            <h2 className="text-primary font-mono text-lg tracking-[0.4em] mb-10 flex items-center justify-end gap-3 opacity-90 drop-shadow-md">
+        <section className="scroll-section min-h-screen w-full flex flex-col justify-center items-center md:items-end p-6 md:p-12 pointer-events-auto relative z-10">
+          <div className="max-w-4xl w-full md:mr-12 lg:mr-24 text-center md:text-right">
+            <h2 className="text-primary font-mono text-sm md:text-lg tracking-[0.4em] mb-10 flex items-center justify-center md:justify-end gap-3 opacity-90 drop-shadow-md">
                EDUCATION_LOGS <GraduationCap size={24} />
             </h2>
             
-            <div className="mb-16 border-r-4 border-primary/70 pr-8 hover:border-primary transition-colors drop-shadow-[0_5px_15px_rgba(0,0,0,0.8)]">
-              <h3 className="text-4xl md:text-5xl lg:text-6xl font-black text-white uppercase tracking-tight mb-4 leading-tight">Master of Computer Applications</h3>
-              <p className="text-primary font-mono text-lg md:text-xl mb-6">Swarnandhra College of Engineering Technology</p>
-              <div className="inline-block bg-primary/20 text-primary font-bold px-6 py-3 font-mono text-lg md:text-xl border-2 border-primary/50 shadow-[0_0_25px_rgba(0,255,204,0.3)]">
+            <div className="mb-12 border-b-4 md:border-b-0 md:border-r-4 border-primary/70 pb-8 md:pb-0 md:pr-8 hover:border-primary transition-colors drop-shadow-[0_5px_15px_rgba(0,0,0,0.8)]">
+              <h3 className="text-3xl md:text-5xl lg:text-6xl font-black text-white uppercase tracking-tight mb-4 leading-tight">Master of Computer Applications</h3>
+              <p className="text-primary font-mono text-base md:text-xl mb-6">Swarnandhra College of Engineering Technology</p>
+              <div className="inline-block bg-primary/20 text-primary font-bold px-4 md:px-6 py-2 md:py-3 font-mono text-base md:text-xl border-2 border-primary/50 shadow-[0_0_25px_rgba(0,255,204,0.3)]">
                 CGPA: 7.9
               </div>
             </div>
 
-            <div className="border-r-4 border-secondary/70 pr-8 hover:border-secondary transition-colors drop-shadow-[0_5px_15px_rgba(0,0,0,0.8)]">
-              <h3 className="text-4xl md:text-5xl lg:text-6xl font-black text-white uppercase tracking-tight mb-4 leading-tight">Bachelor of Business Admin</h3>
-              <p className="text-secondary font-mono text-lg md:text-xl mb-6">Sri ASNM Degree College</p>
-              <div className="flex justify-end flex-wrap gap-4">
-                <span className="bg-secondary/20 text-secondary font-bold px-6 py-3 font-mono text-lg md:text-xl border-2 border-secondary/50 shadow-[0_0_25px_rgba(191,0,255,0.3)]">
+            <div className="border-b-4 md:border-b-0 md:border-r-4 border-secondary/70 pb-8 md:pb-0 md:pr-8 hover:border-secondary transition-colors drop-shadow-[0_5px_15px_rgba(0,0,0,0.8)]">
+              <h3 className="text-3xl md:text-5xl lg:text-6xl font-black text-white uppercase tracking-tight mb-4 leading-tight">Bachelor of Business Admin</h3>
+              <p className="text-secondary font-mono text-base md:text-xl mb-6">Sri ASNM Degree College</p>
+              <div className="flex justify-center md:justify-end flex-wrap gap-4">
+                <span className="bg-secondary/20 text-secondary font-bold px-4 md:px-6 py-2 md:py-3 font-mono text-base md:text-xl border-2 border-secondary/50 shadow-[0_0_25px_rgba(191,0,255,0.3)]">
                   CGPA: 8.0
                 </span>
-                <span className="bg-accent/20 text-accent font-bold px-6 py-3 font-mono text-lg md:text-xl border-2 border-accent/50 shadow-[0_0_25px_rgba(255,0,85,0.3)]">
+                <span className="bg-accent/20 text-accent font-bold px-4 md:px-6 py-2 md:py-3 font-mono text-base md:text-xl border-2 border-accent/50 shadow-[0_0_25px_rgba(255,0,85,0.3)]">
                   2nd Place Merit: Digital Marketing
                 </span>
               </div>
@@ -161,9 +161,9 @@ export default function App() {
         </section>
 
         {/* PAGE 3: Technical Skills */}
-        <section className="scroll-section min-h-screen w-full flex flex-col justify-center p-12 pointer-events-auto relative z-10">
-          <div className="max-w-6xl mx-auto w-full">
-            <h2 className="text-accent font-mono text-sm tracking-[0.4em] mb-12 flex items-center gap-3 opacity-80 justify-center">
+        <section className="scroll-section min-h-screen w-full flex flex-col justify-center p-6 md:p-12 pointer-events-auto relative z-10">
+          <div className="max-w-6xl mx-auto w-full mt-20 md:mt-0">
+            <h2 className="text-accent font-mono text-xs md:text-sm tracking-[0.4em] mb-8 md:mb-12 flex items-center gap-3 opacity-80 justify-center">
                <Cpu size={16} /> TECH_SKILLS_MATRIX
             </h2>
             
@@ -194,8 +194,8 @@ export default function App() {
         </section>
 
         {/* PAGE 4: Projects Section */}
-        <section className="scroll-section min-h-screen w-full flex flex-col justify-center p-12 pointer-events-auto relative z-10">
-          <h2 className="text-white font-mono text-sm tracking-[0.4em] mb-12 flex items-center gap-3 opacity-80 justify-center">
+        <section className="scroll-section min-h-screen w-full flex flex-col justify-center p-6 md:p-12 pointer-events-auto relative z-10">
+          <h2 className="text-white font-mono text-xs md:text-sm tracking-[0.4em] mb-8 md:mb-12 flex items-center gap-3 opacity-80 justify-center mt-20 md:mt-0">
             <Code2 size={16} /> PROJECT_ARCHIVES
           </h2>
           
@@ -272,19 +272,19 @@ export default function App() {
         </section>
 
         {/* PAGE 5: Contact Section */}
-        <section className="scroll-section min-h-screen w-full flex flex-col justify-center items-center p-12 pointer-events-auto relative z-10">
-          <div className="max-w-4xl w-full">
-            <h2 className="text-secondary font-mono text-sm tracking-[0.4em] mb-8 flex items-center justify-center gap-3 opacity-80 text-center">
+        <section className="scroll-section min-h-screen w-full flex flex-col justify-center items-center p-6 md:p-12 pointer-events-auto relative z-10">
+          <div className="max-w-4xl w-full mt-20 md:mt-0">
+            <h2 className="text-secondary font-mono text-xs md:text-sm tracking-[0.4em] mb-8 flex items-center justify-center gap-3 opacity-80 text-center">
                <Mail size={16} /> COMM_CHANNELS
             </h2>
             
-            <div className="bg-black/50 backdrop-blur-2xl border border-white/20 p-8 md:p-12 rounded-3xl shadow-[0_0_50px_rgba(0,0,0,0.8)] hover:border-primary/50 transition-all duration-500 hover:shadow-[0_0_50px_rgba(0,255,204,0.15)] relative overflow-hidden group">
+            <div className="bg-black/50 backdrop-blur-2xl border border-white/20 p-6 md:p-12 rounded-3xl shadow-[0_0_50px_rgba(0,0,0,0.8)] hover:border-primary/50 transition-all duration-500 hover:shadow-[0_0_50px_rgba(0,255,204,0.15)] relative overflow-hidden group">
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-secondary to-accent"></div>
               
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12">
                 {/* Left Side: Contact Details */}
                 <div className="flex flex-col justify-center text-center md:text-left">
-                  <h3 className="text-4xl font-black text-white mb-8 tracking-wide">INITIALIZE <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">CONTACT</span></h3>
+                  <h3 className="text-3xl md:text-4xl font-black text-white mb-8 tracking-wide">INITIALIZE <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">CONTACT</span></h3>
                   
                   <div className="flex flex-col gap-8 font-mono text-xl items-center md:items-start">
                     <a href="mailto:vinayketha@gmail.com" className="flex items-center gap-5 text-white font-bold hover:text-primary transition-colors group/link drop-shadow-md">
